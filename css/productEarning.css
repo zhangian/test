@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #4A4A4A;
+  font-family: "micorosoft yahei, arial, helvetica, sans-serif"; }
+
+body {
+  background-color: #ECECEC; }
+
+section {
+  width: 100%;
+  padding: 10px 10px 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+input {
+  -webkit-appearance: none;
+  outline: none; }
+
+.earning-list {
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  padding: 10pt 10px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(77, 77, 77, 0.3);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 10px; }
+  .earning-list img {
+    display: block; }
+  .earning-list .earningLeft {
+    width: 30%;
+    -moz-box-flex: 3;
+    text-align: center; }
+    .earning-list .earningLeft img {
+      margin: 0 auto; }
+    .earning-list .earningLeft span {
+      display: block;
+      margin-top: 10px; }
+  .earning-list .earningMiddle {
+    width: 40%;
+    -moz-box-flex: 4;
+    text-align: center; }
+    .earning-list .earningMiddle dt {
+      font-size: 26px;
+      color: #09B5B1;
+      line-height: 38px; }
+    .earning-list .earningMiddle dd {
+      margin-top: 10px; }
+  .earning-list .earningRight {
+    width: 20%;
+    -moz-box-flex: 2; }
+    .earning-list .earningRight dt {
+      text-align: center;
+      line-height: 38px;
+      font-size: 20px; }
+    .earning-list .earningRight dd {
+      margin-top: 10px; }
+
+/*# sourceMappingURL=productEarning.css.map */

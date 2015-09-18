@@ -1,0 +1,50 @@
+$AmountColor:#F5A623;
+
+$greyTitle:#bdbdbd;
+
+$greenBackground:#09B5B1;
+
+$borderColor:#bcbcbc;
+
+$borderRadius:8px;
+
+$background:#ECECEC;
+
+$fontSize:14px;
+
+$titSize:16px;
+
+$textLineHeight:30px;
+
+$contentColor:#4A4A4A;
+
+*{
+  padding:0;
+  margin: 0;
+  font-size:$fontSize;
+  color:$contentColor;
+  font-family:"micorosoft yahei, arial, helvetica, sans-serif";
+}
+
+body{
+  background-color:$background;
+}
+
+section{
+  width:100%;
+  padding:10px 10px 0;
+  box-sizing:border-box;
+}
+a{
+  text-decoration:none;
+
+}
+
+ul{
+  list-style:none;
+}
+
+input{
+  -webkit-appearance:none;
+  outline: none;
+}

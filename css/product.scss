@@ -1,0 +1,50 @@
+@import 'reset.scss';
+
+section{
+  .list{
+  background-color:#fff;
+    box-shadow:0 5px 5px #ccc;
+    border-radius:$borderRadius;
+    padding-top:10px;
+    padding-left:20px;
+    padding-bottom:10px;
+    box-sizing:border-box;
+    overflow: hidden;
+    margin-bottom:12px;
+    .listLeft{
+      width:94%;
+      float:left;
+      .product-tit{
+        width:70%;
+        color:$greyTitle;
+        float:left;
+        dd{
+          font-size:18px;
+          color:$contentColor;
+          padding:10px 0;
+        }
+      }
+      .product-amount{
+        color: $greyTitle;
+        dd{
+          font-size:18px;
+          color: $AmountColor;
+          padding:10px 0;
+        }
+      }
+    }
+    .listRight{
+      width:6%;
+      float:right;
+      position:relative;
+      font{
+        display:block;
+        position:absolute;
+        margin-top:10px;
+        font-size:30px;
+        font-weight:bolder;
+        color:$greyTitle;
+      }
+    }
+  }
+}

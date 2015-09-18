@@ -1,0 +1,185 @@
+@import 'reset.scss';
+
+
+.content{
+  background:#fff;
+  -webkit-border-radius: $borderRadius;
+  -moz-border-radius: $borderRadius;
+  border-radius: $borderRadius;
+  padding:10px;
+
+  .earning-tit{
+    font-size:$titSize;
+    text-align: center;
+    margin-top:30px;
+    color: $greyTitle;
+  }
+  .earning-rate{
+    text-align: center;
+    font-size:30px;
+    color:$greenBackground;
+  }
+
+
+  .product-info{
+    padding-left:20px;
+    border-bottom:1px solid $borderColor;
+    padding-bottom:30px;
+    li{
+      line-height:30px;
+      font-size:18px;
+      color:$greyTitle;
+      span{
+        font-size:18px;
+      }
+    }
+  }
+  .amount-info{
+    padding-top:30px;
+    padding-left:20px;
+    li{
+      line-height:30px;
+      font-size:18px;
+      color:$greyTitle;
+      span{
+      font-size:18px;
+        font{
+          color:$AmountColor;
+          font-size:18px;
+        }
+      }
+    }
+  }
+  .earning-btn{
+    text-align: center;
+    padding-bottom:20px;
+    padding-top:30px;
+    input:nth-child(1){
+      margin-right:10px;
+    }
+
+  }
+  input{
+    background:$greenBackground;
+    border:none;
+    color:#fff;
+    padding:14px 42px;
+    border-radius:$borderRadius;
+  }
+}
+.earning-shadow{
+  background:hsla(0, 20%, 0%, 0.3);
+  height:100%;
+  width:100%;
+  position:fixed;
+  left:0;
+  top:0;
+  display: none;
+}
+.btn-submit{
+  position:absolute;
+  background:#fff;
+  padding:34px 40px;
+  left:50%;
+  top:50%;
+  display:none;
+  -webkit-border-radius: $borderRadius;
+  -moz-border-radius: $borderRadius;
+  border-radius: $borderRadius;
+
+  input{
+    display:block;
+  }
+  .appointment-text{
+    border:1px solid $borderColor;
+    width: 200px;
+    padding-left:8px;
+    border-radius:4px;
+    margin-bottom:20px;
+    height:30px;
+  }
+  .appointment-btn{
+    width:210px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding:10px 4px;
+    margin: 0 auto;
+    background: $greenBackground;
+    border:1px solid $greenBackground;
+    color:#fff;
+  }
+}
+form{
+  div{
+    padding:0 20px;
+    margin-top:20px;
+    position: relative;
+    display: -webkit-box;
+    label{
+      display: block;
+      width:60px;
+      line-height: 40px;
+      height:40px;
+    }
+    $borderRadius:4px;
+    input{
+      display: block;
+      height: 40px;
+      -webkit-box-flex: 10;
+      border: 1px solid $borderColor;
+      border-radius:$borderRadius;
+      padding-left:10px;
+    }
+    .price{
+      position: absolute;
+      height:40px;
+      line-height:40px;
+      right:28px;
+    }
+
+    
+  }
+  .btn{
+    input{
+      border: none;
+    }
+
+    .line{
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+      position:absolute;
+      width:6px;
+      height:30px;
+      background: $greenBackground;
+    }
+    span{
+      position:absolute;
+      left:50%;
+      width:6px;
+      margin-left:-5px;
+      top:50%;
+      margin-top: -15px;
+      height:30px;
+      background: $greenBackground;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+  button{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: 50px;
+    background: $greenBackground;
+    border: none;
+    color: #ffffff;
+  }
+
+}

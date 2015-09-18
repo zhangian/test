@@ -1,0 +1,60 @@
+@import 'reset.scss';
+.earning-list {
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  padding: 10pt 10px;
+  -webkit-box-shadow:  0 3px 7px hsla(0, 30%, 0%, 0.3);
+  -moz-box-shadow:  0 3px 7px hsla(0, 30%, 0%, 0.3);
+  box-shadow:  0 3px 7px hsla(0, 0%, 30%, 0.3);
+  -webkit-border-radius: $borderRadius;
+  -moz-border-radius: $borderRadius;
+  border-radius: $borderRadius;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+
+  img{
+    display: block;
+  }
+  .earningLeft {
+    width: 30%;
+    -moz-box-flex: 3 ;
+    text-align: center;
+    img{
+      margin: 0 auto;
+    }
+    span{
+      display: block;
+      margin-top:10px;
+    }
+  }
+  .earningMiddle {
+    width: 40%;
+    -moz-box-flex: 4;
+    text-align: center;
+    dt{
+      font-size: 26px;
+      color: $greenBackground;
+      line-height:38px;
+    }
+    dd{
+      margin-top: 10px;
+    }
+
+  }
+  .earningRight {
+    width: 20%;
+    -moz-box-flex: 2;
+    dt{
+      text-align: center;
+      line-height: 38px;
+      font-size: 20px;
+    }
+    dd{
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import 'reset.scss';
+
+*{
+  padding:0;
+  margin:0;
+  font-size: $fontSize;
+}
+
+
+.property{
+  width:100%;
+  background-color:$greenBackground;
+  text-align: center;
+  .month-property{
+    line-height:$textLineHeight;
+    color:#fff;
+    width:86%;
+    border-bottom:1px solid #fff;
+    margin:0 auto;
+    padding-top:20px;
+    padding-bottom:10px;
+    h3{
+      font-size: $titSize;
+    }
+  }
+  .total-assets{
+    color:#fff;
+    line-height:$textLineHeight;
+    padding-top:20px;
+    padding-bottom:10px;
+    h3{
+      font-size: $titSize;
+    }
+  }
+}
+
+.history{
+  width:100%;
+  overflow:hidden;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#fff;
+  .history-assets{
+    width:50%;
+    float:left;
+    line-height:$textLineHeight;
+    padding-left:20px;
+    box-sizing:border-box;
+    border-right:1px solid $borderColor;
+  }
+  .earnings{
+    width:50%;
+    float:left;
+    line-height:$textLineHeight;
+    padding-left:30px;
+    box-sizing:border-box;
+  }
+  .title{
+    color:$greyTitle;
+    font-size:$titSize;
+  }
+  .amount{
+    color:$AmountColor;
+    font-size:$titSize;
+  }
+}

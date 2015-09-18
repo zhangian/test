@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <title>收益预览</title>
+    <link rel="stylesheet" href="css/earning.css" type="text/css" />
+    <script>
+        window.onload=function(){
+            var oBtnSubmit=document.getElementsByClassName('btn-submit')[0];
+
+            var aInput=oBtnSubmit.getElementsByTagName('input');
+
+
+
+            var oEarningBtn=document.getElementsByClassName('earning-btn')[0];
+
+            var aBtn=oEarningBtn.getElementsByTagName('input');
+
+            var oShadow=document.getElementsByClassName('earning-shadow')[0];
+
+            aBtn[1].onclick=function(){
+
+                oBtnSubmit.style.display='block';
+
+                var nLeft=oBtnSubmit.offsetWidth/2;
+
+                var nTop=oBtnSubmit.offsetHeight/2;
+
+                oBtnSubmit.style.marginLeft=-nLeft+'px';
+                console.log(nTop);
+                oBtnSubmit.style.marginTop=-nTop+'px';
+
+                oShadow.style.display="block";
+
+            };
+
+            aInput[1].onclick=function(){
+
+                oBtnSubmit.style.display='none';
+
+                oShadow.style.display="none";
+
+            }
+
+        }
+    </script>
+</head>
+<body>
+<section>
+<div class="content">
+    <div class="earning-tit">预期年化利率:</div>
+    <div class="earning-rate">8.00%</div>
+    <div class="product-info">
+        <ul>
+            <li>理财经理：<span>季敏敏</span></li>
+            <li>公司名称：<span>（上海）悦信通</span></li>
+            <li>产品名称：<span>宝信通</span></li>
+            <li>投资期限：<span>12个月</span></li>
+            <li>收益方式：<span>到期回收本金</span></li>
+        </ul>
+    </div>
+
+    <div class="amount-info">
+        <ul>
+            <li>投资金额：<span><font>180,000.00</font>元</span></li>
+            <li>当前收益：<span><font>3,130.00</font>元</span></li>
+        </ul>
+    </div>
+
+    <div class="earning-btn">
+        <input type="button" value="电子账单" class="bill" />
+        <input type="button" value="预约赎回" class="appointment" />
+    </div>
+</div>
+
+    <div class="earning-shadow"></div>
+
+    <div class="btn-submit">
+        <input type="text" placeholder="请输入您要赎回的金额" class="appointment-text" />
+        <input type="button" value="提交" class="appointment-btn" />
+    </div>
+</section>
+</body>
+</html>

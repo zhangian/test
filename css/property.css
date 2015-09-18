@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #4A4A4A;
+  font-family: "micorosoft yahei, arial, helvetica, sans-serif"; }
+
+body {
+  background-color: #ECECEC; }
+
+section {
+  width: 100%;
+  padding: 10px 10px 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+input {
+  -webkit-appearance: none;
+  outline: none; }
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px; }
+
+.property {
+  width: 100%;
+  background-color: #09B5B1;
+  text-align: center; }
+  .property .month-property {
+    line-height: 30px;
+    color: #fff;
+    width: 86%;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 10px; }
+    .property .month-property h3 {
+      font-size: 16px; }
+  .property .total-assets {
+    color: #fff;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px; }
+    .property .total-assets h3 {
+      font-size: 16px; }
+
+.history {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff; }
+  .history .history-assets {
+    width: 50%;
+    float: left;
+    line-height: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #bcbcbc; }
+  .history .earnings {
+    width: 50%;
+    float: left;
+    line-height: 30px;
+    padding-left: 30px;
+    box-sizing: border-box; }
+  .history .title {
+    color: #bdbdbd;
+    font-size: 16px; }
+  .history .amount {
+    color: #F5A623;
+    font-size: 16px; }
+
+/*# sourceMappingURL=property.css.map */

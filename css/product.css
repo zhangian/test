@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #4A4A4A;
+  font-family: "micorosoft yahei, arial, helvetica, sans-serif"; }
+
+body {
+  background-color: #ECECEC; }
+
+section {
+  width: 100%;
+  padding: 10px 10px 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+input {
+  -webkit-appearance: none;
+  outline: none; }
+
+section .list {
+  background-color: #fff;
+  box-shadow: 0 5px 5px #ccc;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 12px; }
+  section .list .listLeft {
+    width: 94%;
+    float: left; }
+    section .list .listLeft .product-tit {
+      width: 70%;
+      color: #bdbdbd;
+      float: left; }
+      section .list .listLeft .product-tit dd {
+        font-size: 18px;
+        color: #4A4A4A;
+        padding: 10px 0; }
+    section .list .listLeft .product-amount {
+      color: #bdbdbd; }
+      section .list .listLeft .product-amount dd {
+        font-size: 18px;
+        color: #F5A623;
+        padding: 10px 0; }
+  section .list .listRight {
+    width: 6%;
+    float: right;
+    position: relative; }
+    section .list .listRight font {
+      display: block;
+      position: absolute;
+      margin-top: 10px;
+      font-size: 30px;
+      font-weight: bolder;
+      color: #bdbdbd; }
+
+/*# sourceMappingURL=product.css.map */
