@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>微信支付样例-退款</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            font-family:'Microsoft Yahei';
+
+        }
+        a{
+            text-decoration: none;
+            color:hsla(0, 0%, 60%, 1);
+        }
+        ul{
+            list-style: none;
+        }
+        .pay_content h1{
+            background:#0a83c5;
+            color: #fff;
+            padding:14px 0 11px 36px;
+            font-size:18px;
+            font-weight:500;
+        }
+        .pay_content ul{
+            padding:14px;
+            margin-left:25px;
+            margin-right:25px;
+        }
+        .pay_content ul li{
+            padding-top:8px;
+            padding-bottom:4px;
+        }
+        .pay_content ul li img{
+            -webkit-box-shadow:0 3px 6px hsla(0, 0%, 50%, 0.2);
+            -moz-box-shadow:0 3px 6px hsla(0, 0%, 50%, 0.2);
+            box-shadow:0 3px 6px hsla(0, 0%, 50%, 0.2);
+            display:block;
+            width:258px;
+            height:258px;
+            margin:0 auto 10px auto;
+            border:1px solid #eee;
+        }
+        .cancel{
+            /*position: fixed;
+			bottom: 0;*/
+        	width: 100%;
+        	height: 50px;
+        	text-align: center;
+        	background-color: #efefef;
+        	color: #323232;
+        	line-height: 50px;
+        }
+        .cancel a{
+        	display: block;
+        	color: #323232;
+        }
+    </style>
+    <script>
+    	function urlLocation(){
+
+    	}
+    </script>
+</head>
+<body>
+
+<div class="pay_content">
+    <h1>扫码支付</h1>
+    <ul>
+        <li><label>订单编号：</label><span><?php echo $order_id; ?></span></li>
+        <li><label>总 金 额：</label><span>¥<?php echo $total_price;?></span></li>
+        <li><label>&nbsp;</label></li>
+        <li>
+            <img alt="蓝金融在线" src="<?php echo $domain ?>test/example/qrcode.php?data=<?php echo urlencode($url2);?>" />
+        </li>
+    </ul>
+    <div class="cancel">
+        <a onclick="parent.location='http://www.baidu.com'" href="javascript:;">暂不支付</a>
+    </div>
+</div>
+
+</body>
+</html>
