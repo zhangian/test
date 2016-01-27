@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<script type="text/javascript">
+			window.onload=function(){
+				var el=document.createElement('div');
+				el.appendChild(document.createTextNode('hi'));
+
+				for(var i=10; i>0; i--){
+					document.body.appendChild(el.cloneNode(true));
+				}
+
+
+
+
+			}
+
+		</script>-->
+		<style>
+			ul li{
+				margin-bottom:20px;
+			}
+			li em{
+				display: inline-block;
+				width:80px;
+			}
+			li span{
+				display: inline-block;
+				width:30px;
+				text-align: center;
+				border:1px solid #eee;
+				-webkit-user-select: none;
+				cursor: pointer;
+			}
+			li input{
+				width:40px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				单价：<em data-price="0">￥98元</em>
+				<span>+</span>
+				<input type="text" value="1" />
+				<span>-</span>
+				小计：<strong>0元</strong>
+			</li>
+			<li>
+				单价：<em data-price="0">￥10.21元</em>
+				<span>+</span>
+				<input type="text" value="1" />
+				<span>-</span>
+				小计：<strong>0元</strong>
+			</li>
+			<li>
+				单价：<em data-price="0">￥8.80元</em>
+				<span>+</span>
+				<input type="text" value="1" />
+				<span>-</span>
+				小计：<strong>0元</strong>
+			</li>
+			<li>
+				单价：<em>￥16.40元</em>
+				<span>+</span>
+				<input type="text" value="1" />
+				<span>-</span>
+				小计：<strong>0元</strong>
+			</li>
+			<li>
+				单价：<em>￥86.003元</em>
+				<span>+</span>
+				<input type="text" value="1" />
+				<span>-</span>
+				小计：<strong>0元</strong>
+			</li>
+		</ul>
+		<p>以上商品总共：3个，合计：1000元</p>
+		<p>
+			莫听穿林打叶声，何妨吟啸且徐行
+		</p>
+		<script>
+			var aLi=document.getElementsByTagName('li');
+
+				for(var i=0; i<aLi.length; i++){
+
+					fnCount(aLi[i]);
+
+				}
+
+			function fnCount(li){
+				var aBtn=li.getElementsByTagName('span');
+				var oInput=li.getElementsByTagName('input')[0];
+				var oEm =li.getElementsByTagName('em')[0];
+				var oStrong=li.getElementsByTagName('strong')[0];
+				var price = parseFloat(oEm.innerHTML)*1000;
+				var num= Number(oInput.value);
+				var subTotal=[];
+
+				aBtn[0].onclick=function(){
+					num++;
+					oInput.value=num;
+					oStrong.innerHTML=num*price/1000+'元';
+					oEm.setAttribute('data-price',num*price/1000);
+					fnAdd();
+				};
+
+				aBtn[1].onclick=function(){
+					if(num>0) num--;
+					oInput.value=num;
+					oStrong.innerHTML=num*price/1000+'元';
+					oEm.setAttribute('data-price',num*price/1000);
+					fnAdd();
+				}
+			}
+
+			var aInput=document.getElementsByTagName('input');
+			var aEm =document.getElementsByTagName('em');
+			var oP=document.getElementsByTagName('p')[0];
+
+			function fnAdd(){
+
+				var num=0;
+				var price=0;
+
+				for(var i=0; i<aInput.length; i++){
+
+					num +=Number(aInput[i].value);
+					price +=Number(aEm[i].getAttribute('data-price'))*1000;
+				}
+				oP.innerHTML='以上商品总共：'+num+'个，合计：'+(price/1000)+'元';
+			}
+		</script>
+	</body>
+</html>

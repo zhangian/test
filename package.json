@@ -1,0 +1,29 @@
+{
+  "name": "demo_test",
+  "version": "1.0.0",
+  "description": "demo 制作与思考",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangian/test.git"
+  },
+  "keywords": [
+    "demo",
+    "test",
+    "案例制作与联系"
+  ],
+  "author": "zmr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangian/test/issues"
+  },
+  "homepage": "https://github.com/zhangian/test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-livereload": "^3.8.1"
+  }
+}
